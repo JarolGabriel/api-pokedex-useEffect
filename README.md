@@ -54,7 +54,7 @@ diseño responsivo que se adapta a diferentes tamaños de pantalla.
 
 4. **Acceder a la aplicación:**
 
-   Abre tu navegador y ve a `https://api-pokedex-use-effect.vercel.app/` para ver la aplicación en
+   Abre tu navegador y ve a `https://api-pokedex-use-effect-7zo0rq4n3-jarol-gabriels-projects.vercel.app/` para ver la aplicación en
    acción.
 
 ## API
