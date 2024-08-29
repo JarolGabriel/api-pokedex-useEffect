@@ -17,13 +17,15 @@ export default function Pokemons({ name }) {
 
   return (
     <article>
-      <div className="bg-white rounded-lg p-3">
+      <div className="bg-white rounded-lg p-3 hover:bg-gray-300  border hover:border-red-600">
         <img
           src={pokemon.sprites?.other["official-artwork"]?.front_default}
           alt={pokemon.name}
           className="w-full h-auto rounded-t-lg"
         />
-        <h2 className="mt-2 text-gray-600 font-semibold">{name}</h2>
+        <h2 className="mt-2 text-gray-600 font-semibold hover:text-red-600">
+          {name}
+        </h2>
       </div>
     </article>
   );
