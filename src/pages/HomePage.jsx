@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import Pokemons from "./components/Pokemos";
+import Pokemons from "../components/Pokemos";
+import { getPokemonList } from "../Api";
 
-export default function App() {
+export default function HimePage() {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon?limit=50`)
-      .then((response) => response.json())
-      .then((jsonResponse) => {
-        setPokemons(jsonResponse.results);
+    getPokemonList()
+      .then((pokemonListResponse) => {
+        setPokemons(pokemonListResponse);
       })
       .catch((error) => {
         console.log("fetch pokemons error:", error);
